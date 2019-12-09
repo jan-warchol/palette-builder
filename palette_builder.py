@@ -79,7 +79,7 @@ if __name__ == "__main__":
         sys.exit()
 
     p = Palette.load_from_module(sys.argv[1])
-    pprint.pprint(p.colors)
+    pprint.pprint(p.rgb_values())
 
 
 
