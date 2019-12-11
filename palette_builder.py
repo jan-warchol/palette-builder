@@ -32,6 +32,17 @@ class Palette(object):
                    config.foreground,
                    config.shades)
 
+    @classmethod
+    def load_from_path(cls, path):
+        import os
+        module_dir = os.path.dirname(path)
+        if module_dir not in sys.path:
+            sys.path.insert(0, module_dir)
+
+        file_name = os.path.basename(path)
+        module_name = file_name.replace(".py", "")
+        return cls.load_from_module(module_name)
+
     def build_shades(self, shade_specs):
         for name, lightness in shade_specs.items():
             if name.startswith("bg"):
@@ -78,7 +89,7 @@ if __name__ == "__main__":
         print("Missing argument: palette module name")
         sys.exit()
 
-    p = Palette.load_from_module(sys.argv[1])
+    p = Palette.load_from_path(sys.argv[1])
     pprint.pprint(p.rgb_values())
 
 
