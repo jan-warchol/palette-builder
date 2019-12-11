@@ -1,0 +1,193 @@
+{
+	"name": "Selenized (monochrome)",
+	"type": "dark",
+	"colors": {
+		"editor.background":                   "#1d1d1d",
+		"editor.foreground":                   "#c1c1c1",
+		"editorCursor.foreground":             "#c1c1c1",
+		"editorLineNumber.foreground":         "#7a7a7a",
+		"editorLineNumber.activeForeground":   "#c1c1c1",
+		"editorIndentGuide.background":        "#414141",
+		"editorIndentGuide.activeBackground":  "#7a7a7a",
+		"editor.selectionBackground":          "#414141",
+		"editor.inactiveSelectionBackground":  "#2b2b2b",
+		"editor.selectionHighlightBackground": "#1d1d1d",
+		"editor.selectionHighlightBorder":     "#414141"
+	},
+	"tokenColors": [
+		{
+			"scope": "comment",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#7a7a7a"
+			}
+		},
+		{
+			"name": "keywords (including function and class defs)",
+			"scope": [
+				"keyword.control",
+				"storage.type.function",
+				"storage.type.class"
+			],
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#d8d8d8"
+			}
+		},
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#d8d8d8"
+			}
+		},
+		{
+			"name": "imports",
+			"scope": [
+				"keyword.control.import",
+				"keyword.other.import"
+			],
+			"settings": {
+				"fontStyle": "underline",
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"scope": "string",
+			"settings": {
+				"foreground": "#9d9d9d"
+			}
+		},
+		{
+			"name": "docstrings and other multiline strings",
+			"scope": [
+				"string.unquoted",
+				"string.quoted.docstring.multi"
+			],
+			"settings": {
+				"foreground": "#7a7a7a"
+			}
+		},
+		{
+			"scope": "constant",
+			"settings": {
+				"foreground": "#d8d8d8"
+			}
+		},
+		{
+			"scope": "constant.numeric",
+			"settings": {
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "string interpolation",
+			"scope": [
+				"string.constant.character.escape",
+				"constant.character.format",
+				"constant.character.escape",
+				"punctuation.section.embedded",
+				"punctuation.definition.template-expression.begin",
+				"punctuation.definition.template-expression.end",
+				"storage.type.string"
+			],
+			"settings": {
+				"foreground": "#d8d8d8"
+			}
+		},
+		{
+			"scope": "storage",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#7a7a7a"
+			}
+		},
+		{
+			"name": "const, final, abstract etc.",
+			"scope": "storage.modifier",
+			"settings": {
+				"foreground": "#9d9d9d"
+			}
+		},
+		{
+			"name": "Name of the defined entity",
+			"scope": "entity.name",
+			"settings": {
+				"fontStyle": "bold underline",
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"scope": "entity.name.function.decorator",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#9d9d9d"
+			}
+		},
+		{
+			"scope": "variable",
+			"settings": {
+				"foreground": "#c1c1c1"
+			}
+		},
+		{
+			"name": "Almost every variable in JS is in this scope",
+			"scope": "variable.other",
+			"settings": {
+				"foreground": "#c1c1c1"
+			}
+		},
+		{
+			"name": "reserved language variables like this, super, self",
+			"scope": "variable.language",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#9d9d9d"
+			}
+		},
+		{
+			"name": "stuff from library/framework",
+			"scope": "support",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#9d9d9d"
+			}
+		},
+		{
+			"scope": "support.type.exception",
+			"settings": {
+				"fontStyle": "underline",
+				"foreground": "#ffffff"
+			}
+		},
+		{
+			"name": "dots, parens etc. (token separators)",
+			"scope": [
+				"punctuation.definition.block",
+				"punctuation.definition.parameters",
+				"punctuation.definition.arguments",
+				"punctuation.definition.list",
+				"punctuation.definition.dict",
+				"punctuation.definition.binding-pattern",
+				"punctuation.section.block",
+				"punctuation.section.function",
+				"punctuation.section.method",
+				"punctuation.section.class",
+				"punctuation.section.array",
+				"punctuation.separator",
+				"punctuation.accessor"
+			],
+			"settings": {
+				"foreground": "#d8d8d8"
+			}
+		},
+		{
+			"scope": "invalid",
+			"settings": {
+				"fontStyle": "bold",
+				"foreground": "#f3504b"
+			}
+		}
+	]
+}
+
