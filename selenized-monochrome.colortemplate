@@ -1,0 +1,157 @@
+# vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+
+# Information {{{
+Full name:     Monohrome selenized theme
+Short name:    selenized_mono_mono
+Author:        Jan Warchoł <jan.warchol@gmail.com>
+# }}}
+
+# Color palette {{{
+# Color name         GUI            Base256     Base16 (optional)
+Color: bg_bright_1 #252525 ~ Black
+Color: bg_bright_2 #3b3b3b ~ DarkGrey
+Color: fg_dim      #777777 ~ LightGrey
+Color: fg_dim_2    #777777 ~ LightBlue
+Color: fg_bright_2 #dedede ~ LightMagenta
+Color: fg_bright   #dedede ~ White
+Color: red         #ed4a46 ~ DarkRed
+Color: green       #70b433 ~ DarkGreen
+Color: yellow      #dbb32d ~ DarkYellow
+Color: blue        #368aeb ~ DarkBlue
+Color: magenta     #eb6eb7 ~ DarkMagenta
+Color: cyan        #3fc5b7 ~ DarkCyan
+
+# only for terminal colors
+Color: br_red     rgb(255, 100,   0)        ~         LightRed
+Color: br_green   rgb(100, 255,   0)        ~         LightGreen
+Color: br_yellow  rgb(255, 255, 100)        ~         LightYellow
+Color: br_blue    rgb(  0, 100, 255)        ~         LightBlue
+Color: br_magenta rgb(255, 100, 255)        ~         LightMagenta
+Color: br_cyan    rgb(100, 255, 255)        ~         LightCyan
+# }}}
+
+# Terminal colors {{{
+Term colors: bg_bright_1 red green yellow blue magenta cyan fg_dim
+Term colors: bg_bright_2 br_red br_green br_yellow br_blue br_magenta br_cyan fg_bright_2
+# }}}
+
+
+
+Background: any
+Variant: gui 256 16
+
+# interface elements
+Visual        none        bg_bright_2
+LineNr        fg_dim      bg_bright_1
+CursorLineNr  fg_bright_2 none
+CursorColumn  none        bg_bright_1
+CursorLine    none        bg_bright_1
+ToolbarLine   none        bg_bright_2
+ToolbarButton fg_dim      none reverse
+VertSplit     fg_dim      fg_dim
+
+# diffing
+DiffAdd       none   none
+DiffChange    none   none
+DiffDelete    none   none
+DiffText      none   none
+
+# other
+MatchParen        yellow      bg_bright_2 bold
+IncSearch         yellow      none        reverse
+Search            fg_bright_2 none        reverse
+
+# syntax elements
+Comment           fg_dim      none        italic
+Constant          none        none
+String            fg_dim_2    none        bold
+Statement         fg_bright_2 none        bold
+Identifier        fg_bright_2 none
+PreProc           fg_bright_2 none        bold
+Special           fg_bright_2 none
+Boolean           none        none        italic
+Type              fg_dim_2    none        bold italic
+
+# Python
+PythonFunction    fg_bright_2 none        underline
+PythonBuiltin     none        none        italic
+PythonBuiltinFunc none        none        italic
+PythonClassVar    fg_dim_2    none        bold italic
+PythonExClass     fg_bright   none        bold underline
+
+
+
+
+# Common linked groups {{{
+QuickFixLine      -> Search
+StatusLineTerm    -> StatusLine
+StatusLineTermNC  -> StatusLineNC
+Character         -> Constant
+Conditional       -> Statement
+Define            -> PreProc
+Debug             -> Special
+Delimiter         -> Special
+Exception         -> Statement
+Float             -> Constant
+Function          -> Identifier
+Include           -> PreProc
+Keyword           -> Statement
+Label             -> Statement
+Macro             -> PreProc
+Number            -> Constant
+Operator          -> Statement
+PreCondit         -> PreProc
+Repeat            -> Statement
+SpecialChar       -> Special
+SpecialComment    -> Special
+StorageClass      -> Type
+Structure         -> Type
+Tag               -> Special
+Typedef           -> Type
+# See `:help lCursor`
+lCursor           -> Cursor
+# }}}
+
+# Default highlight groups {{{
+
+# Group              Foreground    Background    Attributes
+Normal               none          none
+Terminal             none          none
+ColorColumn          none          none
+Conceal              none          none
+Cursor               none          none
+Directory            none          none
+EndOfBuffer          none          none
+ErrorMsg             none          none
+FoldColumn           none          none
+Folded               none          none
+ModeMsg              none          none
+MoreMsg              none          none
+NonText              none          none
+Pmenu                none          none
+PmenuSbar            none          none
+PmenuSel             none          none
+PmenuThumb           none          none
+Question             none          none
+SignColumn           none          none
+SpecialKey           none          none
+SpellBad             none          none
+SpellCap             none          none
+SpellLocal           none          none
+SpellRare            none          none
+StatusLine           none          none
+StatusLineNC         none          none
+TabLine              none          none
+TabLineFill          none          none
+TabLineSel           none          none
+Title                none          none
+VisualNOS            none          none
+WarningMsg           none          none
+WildMenu             none          none
+
+Error                none          none
+Ignore               none          none
+Todo                 none          none
+Underlined           none          none
+
+# }}}
