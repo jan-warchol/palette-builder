@@ -12,6 +12,7 @@ rules = {
 
     "class_def":           ("fg_1",  "underline"),
     "function_def":        ("fg_1",  "underline"),
+    "function_call":       ("dim_3", "bold"),
     "variable":            ("fg_0",  "normal"),
 
     "type":                ("dim_1", "bold italic"),
