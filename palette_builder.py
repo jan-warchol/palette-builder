@@ -1,4 +1,5 @@
 from __future__ import division
+from slugify import slugify
 from colormath.color_objects import LabColor, sRGBColor
 from colormath.color_conversions import convert_color
 
@@ -13,6 +14,7 @@ class SimpleLab(object):
 class Palette(object):
     def __init__(self, name, background, foreground, shade_specs):
         self.name = name
+        self.slug = slugify(name)
         self.bg = SimpleLab(background)
         self.fg = SimpleLab(foreground)
         self.contrast = self.fg.l - self.bg.l
