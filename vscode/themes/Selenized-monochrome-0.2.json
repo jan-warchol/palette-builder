@@ -2,24 +2,24 @@
 	"name": "Selenized (monochrome)",
 	"type": "dark",
 	"colors": {
-		"editor.background":                   "#{{ bg_0 }}",
-		"editor.foreground":                   "#{{ fg_0 }}",
-		"editorCursor.foreground":             "#{{ fg_0 }}",
-		"editorLineNumber.foreground":         "#{{ fg_dim }}",
-		"editorLineNumber.activeForeground":   "#{{ fg_0 }}",
-		"editorIndentGuide.background":        "#{{ bg_3 }}",
-		"editorIndentGuide.activeBackground":  "#{{ fg_dim }}",
-		"editor.selectionBackground":          "#{{ bg_3 }}",
-		"editor.inactiveSelectionBackground":  "#{{ bg_1 }}",
-		"editor.selectionHighlightBackground": "#{{ bg_0 }}",
-		"editor.selectionHighlightBorder":     "#{{ bg_3 }}"
+		"editor.background":                   "#1d1d1d",
+		"editor.foreground":                   "#c1c1c1",
+		"editorCursor.foreground":             "#c1c1c1",
+		"editorLineNumber.foreground":         "#696969",
+		"editorLineNumber.activeForeground":   "#c1c1c1",
+		"editorIndentGuide.background":        "#414141",
+		"editorIndentGuide.activeBackground":  "#696969",
+		"editor.selectionBackground":          "#414141",
+		"editor.inactiveSelectionBackground":  "#2b2b2b",
+		"editor.selectionHighlightBackground": "#1d1d1d",
+		"editor.selectionHighlightBorder":     "#414141"
 	},
 	"tokenColors": [
 		{
 			"scope": "comment",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#{{ fg_dim }}"
+				"foreground": "#696969"
 			}
 		},
 		{
@@ -31,14 +31,14 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#{{ fg_1 }}"
+				"foreground": "#d8d8d8"
 			}
 		},
 		{
 			"scope": "keyword.operator",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
@@ -49,14 +49,14 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#{{ fg_1 }}"
+				"foreground": "#d8d8d8"
 			}
 		},
 		{
 			"scope": "string",
 			"settings": {
 				"fontStyle": "bold",
-				"foreground": "#{{ fg_dim }}"
+				"foreground": "#696969"
 			}
 		},
 		{
@@ -67,28 +67,28 @@
 			],
 			"settings": {
 				"fontStyle": "bold italic",
-				"foreground": "#{{ fg_dim }}"
+				"foreground": "#696969"
 			}
 		},
 		{
 			"scope": "constant",
 			"settings": {
 				"fontStyle": "normal",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
 			"scope": "constant.numeric",
 			"settings": {
 				"fontStyle": "normal",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
 			"scope": "constant.language",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
@@ -104,14 +104,14 @@
 			],
 			"settings": {
 				"fontStyle": "normal",
-				"foreground": "#{{ fg_1 }}"
+				"foreground": "#d8d8d8"
 			}
 		},
 		{
 			"scope": "storage",
 			"settings": {
 				"fontStyle": "bold italic",
-				"foreground": "#{{ fg_dim }}"
+				"foreground": "#696969"
 			}
 		},
 		{
@@ -119,7 +119,7 @@
 			"scope": "storage.modifier",
 			"settings": {
 				"fontStyle": "bold italic",
-				"foreground": "#{{ fg_dim }}"
+				"foreground": "#696969"
 			}
 		},
 		{
@@ -127,7 +127,7 @@
 			"scope": "entity.name.class",
 			"settings": {
 				"fontStyle": "bold underline",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
@@ -135,27 +135,27 @@
 			"scope": "entity.name",
 			"settings": {
 				"fontStyle": "underline",
-				"foreground": "#{{ fg_1 }}"
+				"foreground": "#d8d8d8"
 			}
 		},
 		{
 			"scope": "entity.name.function.decorator",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
 			"scope": "variable",
 			"settings": {
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
 			"name": "Almost every variable in JS is in this scope",
 			"scope": "variable.other",
 			"settings": {
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
@@ -163,7 +163,7 @@
 			"scope": "variable.language",
 			"settings": {
 				"fontStyle": "bold italic",
-				"foreground": "#{{ fg_dim }}"
+				"foreground": "#696969"
 			}
 		},
 		{
@@ -171,14 +171,14 @@
 			"scope": "support",
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
 			"scope": "support.type.exception",
 			"settings": {
 				"fontStyle": "underline",
-				"foreground": "#{{ fg_0 }}"
+				"foreground": "#c1c1c1"
 			}
 		},
 		{
@@ -199,8 +199,9 @@
 				"punctuation.accessor"
 			],
 			"settings": {
-				"foreground": "#{{ fg_2 }}"
+				"foreground": "#f0f0f0"
 			}
 		}
 	]
 }
+
