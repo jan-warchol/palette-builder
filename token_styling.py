@@ -6,13 +6,13 @@ rules = {
     "keyword":             ("fg_1",  "bold"),
 
     "constant":            ("fg_0",  "italic"),
-    "number":              ("fg_0",  "bold"),
+    "number":              ("fg_2",  "normal"),
     "string":              ("dim_1", "bold"),
     "string_escape":       ("fg_2",  "normal"),
 
-    "class_def":           ("fg_1",  "underline"),
-    "function_def":        ("fg_1",  "underline"),
-    "function_call":       ("dim_3", "bold"),
+    "class_def":           ("fg_2",  "bold underline"),
+    "function_def":        ("fg_2",  "underline"),
+    "function_call":       ("fg_0",  "normal"),
     "variable":            ("fg_0",  "normal"),
 
     "type":                ("dim_1", "bold italic"),
