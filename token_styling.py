@@ -1,6 +1,7 @@
 rules = {
     "comment":             ("dim_0", "italic"),
     "docstring":           ("dim_0", "normal"),
+    "docstring_special":   ("dim_1", "italic"),
 
     "keyword":             ("fg_1",  "bold"),
 
@@ -15,11 +16,11 @@ rules = {
 
     "type":                ("dim_1", "bold italic"),
     "special_var":         ("dim_1", "bold italic"),
-    "annotations":         ("fg_0",  "italic"),
+    "annotation":          ("dim_3", "italic"),
 
     "punctuation":         ("fg_2",  "normal"),
 
-    "argument":            ("fg_0",  "normal"),
+    "keyword_arg":         ("dim_3", "italic"),
     "built_in":            ("fg_0",  "italic"),
     "exception":           ("fg_2",  "bold"),
 }
