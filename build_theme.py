@@ -58,7 +58,7 @@ parser.add_argument("--palette", "-p", required=True)
 parser.add_argument("--template", "-t", required=True)
 args = parser.parse_args()
 
-palette = builder.Palette.load_from_module(args.palette)
+palette = builder.Palette.load_from_path(args.palette)
 styling = build_templating_values(palette, token_styling.rules)
 
 with open(args.template, "r") as f:

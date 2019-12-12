@@ -36,7 +36,7 @@ class Palette(object):
 
     @classmethod
     def load_from_path(cls, path):
-        import os
+        import os, sys
         module_dir = os.path.dirname(path)
         if module_dir not in sys.path:
             sys.path.insert(0, module_dir)
